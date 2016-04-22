@@ -38,4 +38,11 @@ public class ReplaceTest {
     String expected = "h-y th-r- w-nd-r-r, g- d-nc- -t --t";
     assertEquals(expected, testReplace.replaceVowels("hey there wanderer, go dance it out"));
   }
+
+  @Test
+  public void replaceVowels_replaceAEIOUSYMBOLS_String() {
+    Replace testReplace = new Replace();
+    String expected = "h-y% th-r-^ w-nd$-r-r, g- d*-nc- -t --t";
+    assertEquals(expected, testReplace.replaceVowels("hey% there^ wand$erer, go d*ance it out"));
+  }
 }
