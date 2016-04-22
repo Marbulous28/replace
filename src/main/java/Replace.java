@@ -10,6 +10,11 @@ public class Replace {
     replacedVowelString = replacedVowelString.replace("i", "-");
     replacedVowelString = replacedVowelString.replace("o", "-");
     replacedVowelString = replacedVowelString.replace("u", "-");
+    replacedVowelString = replacedVowelString.replace("A", "-");
+    replacedVowelString = replacedVowelString.replace("E", "-");
+    replacedVowelString = replacedVowelString.replace("I", "-");
+    replacedVowelString = replacedVowelString.replace("O", "-");
+    replacedVowelString = replacedVowelString.replace("U", "-");
       return replacedVowelString;
   }
 }
