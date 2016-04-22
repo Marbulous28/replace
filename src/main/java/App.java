@@ -14,5 +14,18 @@ public class App {
       model.put("template", "templates/index.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
+
+    get("/display", (request, response) -> {
+      Map<String, Object> model = new HashMap<String, Object>();
+      model.put("template", "templates/display.vtl");
+
+      String inputtedPuzzle = request.queryParams("puzzleSentence");
+
+      Replace myReplace = new Replace();
+      String output = myReplace.replaceVowels(inputtedPuzzle);
+
+      model.put("output", output);
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
   }
 }
