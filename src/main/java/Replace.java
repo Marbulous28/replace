@@ -1,11 +1,15 @@
 import java.util.ArrayList;
+import java.io.*;
 
 public class Replace {
 
   public String replaceVowels( String puzzle ) {
-    // ArrayList<String> x = new ArrayList<String>();
 
     String replacedVowelString = puzzle.replace("a", "-");
-    return replacedVowelString;
+    replacedVowelString = replacedVowelString.replace("e", "-");
+    replacedVowelString = replacedVowelString.replace("i", "-");
+    replacedVowelString = replacedVowelString.replace("o", "-");
+    replacedVowelString = replacedVowelString.replace("u", "-");
+      return replacedVowelString;
   }
 }
