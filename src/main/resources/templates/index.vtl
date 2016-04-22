@@ -1,0 +1,17 @@
+<h1>Vowel Puzzle<h1>
+
+<h2>How to play:</h2>
+<ol>
+  <li>Player 1 enters a sentence in the field below and submits the form.</li>
+  <li>The page displays the sentence without vowels</li>
+  <li>Player 2 tries to guess what the sentence was.</li>
+</ol>
+
+<form action='/results' method='get'>
+  <div class="form-group">
+    <label for="puzzleSentence">Enter number</label>
+    <input id="puzzleSentence" name="puzzleSentence" class="form-control" type="text">
+  </div>
+
+  <button type="submit" class="btn btn-danger">Submit This Sentence!</button>
+</form>

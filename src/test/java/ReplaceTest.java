@@ -31,6 +31,7 @@ public class ReplaceTest {
     String expected = "h-y th-r- w-nd-r-r, g- d-nc- -t -ff";
     assertEquals(expected, testReplace.replaceVowels("hey there wanderer, go dance it off"));
   }
+
   @Test
   public void replaceVowels_replaceAEIOU_String() {
     Replace testReplace = new Replace();
