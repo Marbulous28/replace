@@ -45,4 +45,11 @@ public class ReplaceTest {
     String expected = "h-y% th-r-^ w-nd$-r-r, g- d*-nc- -t --t";
     assertEquals(expected, testReplace.replaceVowels("hey% there^ wand$erer, go d*ance it out"));
   }
+
+  @Test
+  public void replaceVowels_replaceCaps_String() {
+    Replace testReplace = new Replace();
+    String expected = "h-ll-";
+    assertEquals(expected, testReplace.replaceVowels("HELLO"));
+  }
 }

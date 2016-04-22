@@ -4,17 +4,16 @@ import java.io.*;
 public class Replace {
 
   public String replaceVowels( String puzzle ) {
+    puzzle = puzzle.toLowerCase();
+    String replacedString = puzzle.replace("a", "-");
+    replacedString = replacedString.replace("e", "-");
+    replacedString = replacedString.replace("i", "-");
+    replacedString = replacedString.replace("o", "-");
+    replacedString = replacedString.replace("u", "-");
+    return replacedString;
+  }
 
-    String replacedVowelString = puzzle.replace("a", "-");
-    replacedVowelString = replacedVowelString.replace("e", "-");
-    replacedVowelString = replacedVowelString.replace("i", "-");
-    replacedVowelString = replacedVowelString.replace("o", "-");
-    replacedVowelString = replacedVowelString.replace("u", "-");
-    replacedVowelString = replacedVowelString.replace("A", "-");
-    replacedVowelString = replacedVowelString.replace("E", "-");
-    replacedVowelString = replacedVowelString.replace("I", "-");
-    replacedVowelString = replacedVowelString.replace("O", "-");
-    replacedVowelString = replacedVowelString.replace("U", "-");
-      return replacedVowelString;
+  public String checkAnswer( String potentialAnswer) {
+    return "";
   }
 }
