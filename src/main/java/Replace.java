@@ -13,7 +13,12 @@ public class Replace {
     return replacedString;
   }
 
-  public String checkAnswer( String potentialAnswer) {
-    return "";
+  public String checkAnswer( String potentialAnswer, String originalPuzzle) {
+    if (potentialAnswer.equals(originalPuzzle)) {
+      return "That's the right answer";
+    }else {
+      return "Not the right answer";
+    }
+
   }
 }
